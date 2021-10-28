@@ -1,0 +1,167 @@
+* {
+	box-sizing: border-box;
+}
+
+p.about_web {
+    color: rgb(177, 60, 60);
+    text-decoration:  none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a.backToForm {
+	color:rgb(0, 92, 121);
+	text-decoration: none;
+	font-size: 20pt;
+}
+
+a.backToForm:hover {
+	color: rgba(161, 0, 201, 0.233);
+	text-decoration: underline;
+}
+
+button.btnSubmit {
+    display: inline-block;
+    padding: 15px 25px;
+    font-size: 24px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+}
+  
+  button.btnSubmit:hover {background-color: #3e8e41}
+  
+  button.btnSubmit:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
+
+  button.btnClear {
+    display: inline-block;
+    padding: 15px 25px;
+    font-size: 24px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color:  #a80dad;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+  }
+  
+  button.btnClear:hover {background-color: #a04fa3;}
+  
+  button.btnClear:active {
+    background-color: #a80dad;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
+
+  input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  div {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
+  a.showName{
+      color: darkblue ;
+  }
+  a.showName:visited {
+    color: darkblue ;
+    text-decoration: none;
+  }
+
+  h1.searchTermH1{
+    text-align: center;
+    color: rgba(114, 0, 114, 0.658);
+    font-size: 30pt;
+}
+
+ h2.searchTerm{
+        text-align: left;
+        color: rgb(17, 71, 41);
+ }
+
+ p {
+	font-size: 1rem;
+	line-height: 2;
+}
+p.error {
+	font-size: 1rem;
+	line-height: 2;
+    color: red;
+}
+p.not-found{
+    color: crimson;
+    text-align: left;
+}
+
+h1.notFound{
+    text-align: center;
+    color: rgba(114, 0, 114, 0.658);
+    font-size: 30pt;
+}
+
+  
+ul.ulShows li{
+    color: salmon;
+}
+
+
+h1.idShow{
+    text-align: center;
+    color: rgba(114, 0, 114, 0.658);
+    font-size: 30pt;
+}
+
+h1.first{
+    text-align: center;
+    color: rgba(114, 0, 114, 0.658);
+    font-size: 30pt;
+}
+
+.imgShow{
+    display: block;
+    margin-left: auto;
+  margin-right: auto;
+}
+  .blockT{
+    font-size: 20pt;
+    text-align: left;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+  }
+    
+    
+html,
+body {
+	font-size: 14pt;
+}
+
+body {
+	background: #dbdada;
+	font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+}
+
+main {
+	max-width: 75%;
+	margin: auto;
+}

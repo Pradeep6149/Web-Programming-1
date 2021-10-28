@@ -1,0 +1,41 @@
+<div>
+    <a class = "backToForm" href="/">Make another search</a> 
+  <h1 class = "idShow">{{showsMatched.name}}</h1> 
+  {{#if hasImage}}
+    <img class = "imgShow" alt= ImageOfTheShow src="{{showsMatched.image.medium}}"/> 
+  {{/if}}
+  <dl>
+    {{#if hasLanguage}} 
+        <dt class="blockT">Language</dt> 
+        <dd>{{showsMatched.language}}</dd> 
+    {{/if}}
+    
+    {{#if hasGenre}}
+        <dt class="blockT">Genres</dt> 
+        <dd>
+            <ul class="error-list">
+                {{#each showsMatched.genres}}
+                <li>
+                    {{this}}
+                </li>
+                {{/each}}
+            </ul>
+        </dd> 
+    {{/if}}
+    
+    {{#if hasAverage}}
+        <dt class="blockT">Average Rating</dt> 
+        <dd>{{showsMatched.rating.average}}</dd> 
+    {{/if}}
+   
+    {{#if hasNetwork}}
+        <dt class="blockT">Network</dt> 
+        <dd>{{showsMatched.network.name}}</dd> 
+    {{/if}}
+    
+    {{#if hasSummary}}
+        <dt class="blockT">Summary</dt> 
+        <dd>{{{showsMatched.summary}}}</dd> 
+    {{/if}}
+  </dl> 
+</div> 

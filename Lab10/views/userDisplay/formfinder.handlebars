@@ -1,0 +1,26 @@
+        <h1 class = "first">{{currentHeader}}</h1>
+        <div class = "divForm">
+            <form id = "login-form" action="/login" method="POST" class="show-finder-form">
+            <label>
+                Username: 
+                <input type="text" name="username" id="username" placeholder="Username.." value="{{givenUsername}}" class="full-width-input"/>
+                <br>
+            </label>
+            <label>
+                Password:
+                <input type="password" name="password" id="password" placeholder="Password.." value="{{givenPassword}}" class="full-width-input"/>
+                <br>
+            </label>
+            <br>
+            <br>
+            <button class="btnSubmit" type="submit">Login</button>
+            <button class="btnClear" type="reset">Clear Form</button>
+            </form>
+        </div>
+            {{#if hasErrors}}
+                <ul class="error-list">
+                    <li>Please enter a valid username and/or passowrd.</li>
+                </ul>
+            {{/if}}
+
+    

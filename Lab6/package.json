@@ -1,0 +1,18 @@
+{
+	"name": "cs-546-lab-06",
+	"version": "1.0.0",
+	"description": "",
+	"main": "app.js",
+	"scripts": {
+		"seed": "node ./task/seed.js",
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"start": "node app.js"
+	},
+	"author": "PradeepKumar_SenthamaraiKannabiran",
+	"license": "MIT",
+	"dependencies": {
+		"express": "^4.17.1",
+		"mongodb": "^3.3.0-beta2",
+		"seed": "^0.4.4"
+	}
+}

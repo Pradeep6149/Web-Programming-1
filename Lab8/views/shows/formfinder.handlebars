@@ -1,0 +1,24 @@
+        <h1 class = "first">{{currentHeader}}</h1>
+        <p class = "about_web">This is simple templated web appliation I created for Lab 8. Basic function of this website is to search a show from TV Maze API. There will be a form where you can submit the searchKey for the shows. Then 20 matching results will be displayed in the next page. Also this website allows to get the show with respect to the show id. I used handlebars for this website.  </p>
+        <div class = "divForm">
+            <form action="/search" method="POST" class="show-finder-form">
+            <label id = "form">
+                Enter the search term:
+                <br>
+                <input type="text" name="searchTerm" placeholder="Search term.." value="{{search.keyword}}" class="full-width-input"/>
+            </label>
+            <br>
+            <br>
+            <button class="btnSubmit" type="submit">Search</button>
+            <button class="btnClear" type="reset">Clear Form</button>
+            </form>
+        </div>
+            {{#if hasErrors}}
+                <ul class="error-list">
+                {{#each errors}}
+                    <p class = "error">Please enter a keyword to search.</p>
+                {{/each}}
+                </ul>
+            {{/if}}
+
+    

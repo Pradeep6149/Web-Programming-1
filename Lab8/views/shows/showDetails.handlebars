@@ -1,0 +1,17 @@
+<section>
+    <a class = "backToForm" href="/">Make another search</a>
+    <h1 class = "searchTermH1">{{currentHeader}}</h1>
+    <h2 class = "searchTerm">{{searchTerm}}</h2>
+  {{#if showsMatched}}
+  {{#each showsMatched}}  
+    <article class="showsDisplay">
+        <ul class = "ulShows">
+            <li>
+                <h6><a class = "showName" href="/shows/{{show.id}}">{{show.name}}</a></h6>
+            </li>
+        </ul>
+    </article>
+  {{/each}}
+   
+  {{/if}}  
+</section>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>TV SHOWS</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="/public/site.css">
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    </head>
+
+    <body>
+        <header>
+            <h1>TV Shows</h1>
+        </header>
+
+        <form id="searchForm">
+            <label for="search_term">Please enter a keyword:</label>   
+            <input type="text"  id="search_term" />
+            <button id = "searchButton" type='submit'>Search Shows</button>
+        </form>
+
+        <div class="error" id="errorDiv" hidden></div>
+
+        <ul id="showList" hidden></ul>
+        <div id="show" hidden></div>
+        <a id="homeLink" href="/" hidden>Back to All Shows</a>
+        <footer><p class="name">Pradeep Kumar Senthamarai Kannabiran</p>
+            <p class="id">10468251</p><br>Graduate Student</footer>
+
+        <script src="/public/script.js"></script>
+        
+    </body>
+
+</html>
